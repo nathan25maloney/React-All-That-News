@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+var React = require("react");
+var ReactDOM = require("react-dom");
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+// Grabs the Routes
+var routes = require("./config/routes.js");
+
+// Renders the contents according to the route page.
+ReactDOM.render(routes, document.getElementById("app"));
